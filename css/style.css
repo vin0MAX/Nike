@@ -10,6 +10,9 @@
     --form-color:#959595;
     --input-color:#8D8D8D;
 }
+body{
+    font-weight: 400;
+}
 .nav-list{
     display: flex;
     gap: 29px;
@@ -45,4 +48,60 @@
     font-weight: 300;
     font-size: 24px;
     color: var(--header-text-color);
+}
+.main-wrap{
+    display: flex;
+
+}
+.features{
+    height: 858px;
+    background-image: url(../img/nike.png),url(../img/nike-bg.jpg);
+    background-position:top 94px left 194px,center;
+    background-size:160px,1470px;
+    background-repeat: no-repeat;
+}
+.features-title{
+    font-weight: 400;
+    font-family: "Playfair Display", sans-serif;
+    margin-left: 156px;
+    font-size: 144px;
+    color: var(--text-color);
+}
+.features-text{
+    margin-left: 195px;
+    margin-top: 189px;
+    font-family: "PT Serif", sans-serif;
+    font-size: 48px;
+    color: var(--text-color);
+}
+.features-item:nth-child(3){
+    margin-top: 12px;
+    margin-left: 164px;
+    font-weight: 400;
+    color: var(--text-color);
+    font-size: 18px;
+
+}
+.features-item:nth-child(2){
+    font-family: "Playfair Display", sans-serif;
+    color: var(--text-color);
+    font-size: 72px;
+    margin-left: 164px;
+    font-weight: 400;
+    font-size: 72px;
+}    
+
+
+.features-btn{
+    margin-left: 164px;
+    margin-top: 41px;
+    font-family: "Roboto", sans-serif;
+    border-style: none;
+    border-radius: 10px;
+    width: 254px;
+    height: 67px;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--text-color);
+    background-color: #8e32c6;
 }
