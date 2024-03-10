@@ -1,7 +1,7 @@
 /* font-family: "Roboto", sans-serif;
    font-family: "Playfair Display", sans-serif;
    font-family: "PT Serif", sans-serif; */
-:root{
+ :root{
     --header-color:#012d63;
     --text-color:#fff;
     --header-text-color:#c7c7c7;
@@ -10,6 +10,7 @@
     --form-color:#959595;
     --input-color:#8D8D8D;
 }
+/*
 body{
     font-weight: 400;
 }
@@ -41,8 +42,8 @@ body{
 }
 .nav-link:hover{
     color: var(--text-color);
-    /* transition: color 0.2s linear; */
-}
+  transition: color 0.2s linear; 
+ }
 .lang-link{
     margin-left: 73px;
     font-weight: 300;
@@ -104,4 +105,16 @@ body{
     font-size: 24px;
     color: var(--text-color);
     background-color: #8e32c6;
+}  */
+.logo-img{
+    background-color: black;
+    margin-right: 152px;
+    width: 100px;
+    height: 60px;
+    margin-left: 168px;
+}
+.reviews-text{
+
+}
+.reviews-text:nth-child(3){
 }

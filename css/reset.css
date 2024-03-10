@@ -1,4 +1,4 @@
-body{
+ body{
     margin: 0%;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
@@ -18,11 +18,11 @@ h1,h2,h3,h4,h5,h6,p{
 img{
     display: block;
 }
- .container{
+.container{
     width: 1470px;
     padding: 0 15px;
     margin: 0 auto;
 } 
 p{
     font-weight: 400;
-}
+} 
