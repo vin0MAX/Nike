@@ -10,14 +10,19 @@
     --form-color:#959595;
     --input-color:#8D8D8D;
 }
-/*
+
 body{
     font-weight: 400;
+}
+.nav{
+    display: flex;
+
 }
 .nav-list{
     display: flex;
     gap: 29px;
-    justify-content:flex-end;
+    align-items: center;
+    text-align: center;
 }
 .header{
     background-color: var(--header-color);
@@ -25,13 +30,16 @@ body{
 .header-wrap{
     display: flex;
     align-items: center;
+    text-align: center;
 }
-.logo-img{
+.logo{
+    padding-top: 16px;
     margin-right: 152px;
+    margin-bottom: 17px;
     width: 100px;
     height: 60px;
-    margin-left: 168px;
 }
+
 .nav-link{
     font-weight: 300;
     font-size: 24px;
@@ -50,32 +58,110 @@ body{
     font-size: 24px;
     color: var(--header-text-color);
 }
-.main-wrap{
+.features{
+    background-image: url(../img/nike.png),url(../img/nike-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 160px,cover;
+    background-position:top 94px left 170px,center;
+    padding-top: 184px;
+    color: #fff;
+}
+.features-text{
+    font-family: "PT Serif", sans-serif; 
+    margin-left: 6p;
+    font-weight: 400;
+    font-size: 48px;
+}
+.features-text:nth-child(4){
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 12px;
+}
+.features-title{
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 400;
+    font-size: 144px;
+}
+.features-title:nth-child(3){
+    font-weight: 400;
+    font-size: 72px;
+}
+.benefits{
+    background-image: url(../img/bg-one.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top:105px;
+    padding-bottom: 105px;
+}
+.benefits-list{
     display: flex;
+}
+.benefits-wrap{
+    display: flex;
+    border: 5px solid var(--button-color);
+    width: 1110px;
+    height: 396px;
+}
+.benefits-text{
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--text-color);
+}
+.benefits-item{
+    margin-left: 50px;
+
+}
+.benefits-item:nth-child(2)::before{
+    content: "";
+    display: block;
+    width: 240px;
+    height: 240px;
+    background-image: url(../img/paint.png);
+}
+.benefits-item:nth-child(1)::after{
+    content: "";
+    display: block; 
+    width: 240px;
+    height: 240px;
+    background-image: url(../img/star.png);
+}
+
+/* .main-wrap{
+    display: flex;
+    flex-wrap: wrap;
 
 }
 .features{
+    padding-bottom: 173px;
     height: 858px;
     background-image: url(../img/nike.png),url(../img/nike-bg.jpg);
     background-position:top 94px left 194px,center;
-    background-size:160px,1470px;
+    background-size:160px,cover;
     background-repeat: no-repeat;
+}
+.features-title:nth-child(3){
+    margin-left: 164px;
+    font-size: 72px;
+    color: var(--text-color);
 }
 .features-title{
     font-weight: 400;
     font-family: "Playfair Display", sans-serif;
-    margin-left: 156px;
+    margin-left: 156p;
     font-size: 144px;
     color: var(--text-color);
 }
 .features-text{
-    margin-left: 195px;
-    margin-top: 189px;
+    padding-top: 179px;
+    margin-left: 195p;
     font-family: "PT Serif", sans-serif;
     font-size: 48px;
-    color: var(--text-color);
-}
-.features-item:nth-child(3){
+    color: var(--text-color); */
+/* } */
+/* .features-item:nth-child(3){
     margin-top: 12px;
     margin-left: 164px;
     font-weight: 400;
@@ -90,12 +176,12 @@ body{
     margin-left: 164px;
     font-weight: 400;
     font-size: 72px;
-}    
+}     */
 
 
 .features-btn{
-    margin-left: 164px;
     margin-top: 41px;
+    margin-bottom: 183px;
     font-family: "Roboto", sans-serif;
     border-style: none;
     border-radius: 10px;
@@ -105,16 +191,4 @@ body{
     font-size: 24px;
     color: var(--text-color);
     background-color: #8e32c6;
-}  */
-.logo-img{
-    background-color: black;
-    margin-right: 152px;
-    width: 100px;
-    height: 60px;
-    margin-left: 168px;
-}
-.reviews-text{
-
-}
-.reviews-text:nth-child(3){
-}
+} 

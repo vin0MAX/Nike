@@ -1,5 +1,5 @@
  body{
-    margin: 0%;
+    margin: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
@@ -16,13 +16,11 @@ h1,h2,h3,h4,h5,h6,p{
     font-weight: 400;
 }
 img{
+    max-width: 100%;
     display: block;
 }
 .container{
-    width: 1470px;
+    width: 1140px;
     padding: 0 15px;
     margin: 0 auto;
-} 
-p{
-    font-weight: 400;
 } 
