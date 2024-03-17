@@ -8,7 +8,8 @@
     --footer-color:#021635;
     --button-color:#8e32c6;
     --form-color:#959595;
-    --input-color:#8D8D8D;
+    --input-color:#D8D8D8;
+    --reviews-color: #8d8d8d;
 }
 
 body{
@@ -35,7 +36,7 @@ body{
 .logo{
     padding-top: 16px;
     margin-right: 152px;
-    margin-bottom: 17px;
+    margin-bottom: 16px;
     width: 100px;
     height: 60px;
 }
@@ -50,14 +51,19 @@ body{
 }
 .nav-link:hover{
     color: var(--text-color);
-  transition: color 0.2s linear; 
+    transition: color 0.2s linear; 
  }
+ .lang-span{
+    color: var(--text-color);
+ }
+
 .lang-link{
     margin-left: 73px;
     font-weight: 300;
     font-size: 24px;
     color: var(--header-text-color);
 }
+/* main */
 .features{
     background-image: url(../img/nike.png),url(../img/nike-bg.jpg);
     background-repeat: no-repeat;
@@ -68,7 +74,6 @@ body{
 }
 .features-text{
     font-family: "PT Serif", sans-serif; 
-    margin-left: 6p;
     font-weight: 400;
     font-size: 48px;
 }
@@ -87,98 +92,6 @@ body{
     font-weight: 400;
     font-size: 72px;
 }
-.benefits{
-    background-image: url(../img/bg-one.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top:105px;
-    padding-bottom: 105px;
-}
-.benefits-list{
-    display: flex;
-}
-.benefits-wrap{
-    display: flex;
-    border: 5px solid var(--button-color);
-    width: 1110px;
-    height: 396px;
-}
-.benefits-text{
-    text-align: center;
-    font-weight: 400;
-    font-size: 36px;
-    color: var(--text-color);
-}
-.benefits-item{
-    margin-left: 50px;
-
-}
-.benefits-item:nth-child(2)::before{
-    content: "";
-    display: block;
-    width: 240px;
-    height: 240px;
-    background-image: url(../img/paint.png);
-}
-.benefits-item:nth-child(1)::after{
-    content: "";
-    display: block; 
-    width: 240px;
-    height: 240px;
-    background-image: url(../img/star.png);
-}
-
-/* .main-wrap{
-    display: flex;
-    flex-wrap: wrap;
-
-}
-.features{
-    padding-bottom: 173px;
-    height: 858px;
-    background-image: url(../img/nike.png),url(../img/nike-bg.jpg);
-    background-position:top 94px left 194px,center;
-    background-size:160px,cover;
-    background-repeat: no-repeat;
-}
-.features-title:nth-child(3){
-    margin-left: 164px;
-    font-size: 72px;
-    color: var(--text-color);
-}
-.features-title{
-    font-weight: 400;
-    font-family: "Playfair Display", sans-serif;
-    margin-left: 156p;
-    font-size: 144px;
-    color: var(--text-color);
-}
-.features-text{
-    padding-top: 179px;
-    margin-left: 195p;
-    font-family: "PT Serif", sans-serif;
-    font-size: 48px;
-    color: var(--text-color); */
-/* } */
-/* .features-item:nth-child(3){
-    margin-top: 12px;
-    margin-left: 164px;
-    font-weight: 400;
-    color: var(--text-color);
-    font-size: 18px;
-
-}
-.features-item:nth-child(2){
-    font-family: "Playfair Display", sans-serif;
-    color: var(--text-color);
-    font-size: 72px;
-    margin-left: 164px;
-    font-weight: 400;
-    font-size: 72px;
-}     */
-
-
 .features-btn{
     margin-top: 41px;
     margin-bottom: 183px;
@@ -192,3 +105,232 @@ body{
     color: var(--text-color);
     background-color: #8e32c6;
 } 
+
+.benefits{
+    background-image: url(../img/bg-one.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top:105px;
+    padding-bottom: 105px;
+    border-bottom: 2px solid var(--text-color);
+}
+.benefits-list{
+    display: flex;
+}
+.benefits-wrap{
+    display: flex;
+    justify-content: center;
+    border: 5px solid var(--button-color);
+    width: 1110px;
+}
+.benefits-text{
+    font-family: "Playfair Display", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--text-color);
+    padding-top: 25px;
+    padding-bottom: 4px;
+}
+.benefits-item{
+    margin-left: 50px;
+}
+.benefits-item:nth-child(1)::after{
+    content: "";
+    display: block; 
+    width: 240px;
+    height: 240px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/star.png);
+}
+.benefits-item:nth-child(2)::before{
+    content: "";
+    display: block;
+    padding-left: 95px;
+    padding-right: 95px;
+    width: 240px;
+    height: 240px;
+    background-repeat: no-repeat;
+    background-image: url(../img/paint.png);
+    background-position: center;
+}
+.benefits-item:nth-child(2){
+    height: 352px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-left: 1px solid var(--text-color);
+    border-right: 1px solid var(--text-color);
+}
+.benefits-item:nth-child(3)::after{
+    content: "";
+    display: block; 
+    width: 240px;
+    height: 240px;
+    background-image: url(../img/truck.png);
+}
+.reviews{
+    background-image: url(../img/flowers.webp),url(../img/bg-reviews.jpg);
+    background-position: bottom left,center;
+    background-repeat: no-repeat;
+    background-size: 240px,cover;
+    border-bottom: 2px solid var(--text-color);
+}
+.reviews-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.reviews-list{
+    display: flex;
+    justify-content: center;
+    gap: 93px;
+    padding-bottom: 115px;
+} 
+.title{
+    font-family: "Playfair Display", sans-serif;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    text-align: center;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 48px;
+}
+.reviews-item{
+    width: 255px;
+    height: 292px;
+    border-radius: 15px;
+    padding-left: 13px;
+    box-shadow:  0 14px 0 -5px #7b54b2,0 30px 0 -13px #533978;
+    background: linear-gradient(135deg, #00e5e6 7.29%, #00a8f7 26.04%, #9a76f9 62.5%, #cc5ec2 100%);
+} 
+.reviews-item:nth-child(2){
+    box-shadow:  0 14px 0 -5px #9159b1,0 30px 0 -13px #61337c;
+    background: linear-gradient(135deg, #ff68b4 0%, #ff45e1 26.04%, #ce3aff 62.84%, #8961ff 100%);
+}
+.reviews-item:nth-child(3){
+    box-shadow:  0 14px 0 -5px #b95a4c,0 30px 0 -13px #732f26;
+    background: linear-gradient(135deg, #ffe128 0%, #ff9b5c 30.21%, #ff8381 63.29%, #ff5489 100%);
+}
+.reviews-text{
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 24px;
+    margin-top:49px;
+    margin-bottom: 8px;
+}
+.reviews-date{
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--input-color);
+}
+.reviews-text:nth-child(2){
+    color: var(--input-color);
+    font-weight: 400;
+    font-size: 12px;
+    margin:0;
+}
+.photo{
+    display: flex;
+    margin-top: 47px;
+}
+.reviews-title{
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 14px;
+}
+.reviews-img{
+    width: 31px;
+    height: 31px;
+}
+.box{
+    margin-left:5px;
+}
+.order{
+    background-image: url(../img/bg-order.jpg);
+    background-size: cover;
+}
+.form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 19px;
+}
+.form-input{
+    border-style: none;
+    border-radius: 50px;
+    width: 580px;
+    height: 50px;
+}
+.form-input:nth-child(1){
+    border-radius: 50px;
+    width: 690px;
+    height: 60px;
+}
+.a::placeholder{
+    font-weight: 400;
+    font-size: 28px;
+}
+::placeholder{
+    padding-left: 25px;
+    color: var(--form-color);
+    font-weight: 400;
+    font-size: 24px;
+}
+.form-btn{
+    border-radius: 16px;
+    width: 248px;
+    height: 68px;
+    background-color: var(--button-color);
+    border-style: none;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--text-color);
+    margin-bottom: 37px;
+}
+.footer{
+    height: 316px;
+    background-color: var(--footer-color);
+    color: var(--text-color);
+}
+.footer-wrap{
+    display: flex;
+    justify-content: center;
+}
+.email-link{
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--text-color);
+    font-family: "Roboto", sans-serif;
+}
+.footer-item{
+    padding-top: 45px;
+    border-bottom: 2px solid;
+}
+
+.footer-text{
+    font-weight: 400;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+.email-item{
+    text-align: right;
+    border-bottom: 2px solid ;
+}
+.email-list{
+    margin-left: 373px;
+    
+}
+.email-list:nth-child(2){
+    text-align: center;
+}
+.email-img{
+    align-items: flex-end;
+    margin-top: 19px;
+    width: 108px;
+    height: 81px;
+}
+
