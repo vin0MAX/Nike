@@ -65,36 +65,45 @@ body{
 }
 /* main */
 .features{
-    background-image: url(../img/nike.png),url(../img/nike-bg.jpg);
+    background-image: url(../img/nike-bg.jpg);
     background-repeat: no-repeat;
-    background-size: 160px,cover;
-    background-position:top 94px left 170px,center;
-    padding-top: 184px;
+    background-size:cover;
+    background-position:center;
+    padding-top: 94px;
+    padding-bottom: 184px;
     color: #fff;
 }
 .features-text{
     font-family: "PT Serif", sans-serif; 
     font-weight: 400;
     font-size: 48px;
+    
 }
-.features-text:nth-child(4){
+.features-text{
     font-weight: 400;
     font-size: 18px;
     font-family: "Roboto", sans-serif;
     margin-top: 12px;
+}
+.features-name{
+    font-family: "PT Serif", sans-serif; 
+    font-weight: 400;
+    font-size: 48px;
+    margin-top: -30px;
+    margin-left: 10px;
+}
+.features-sabtitle{
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 400;
+    font-size: 72px;
 }
 .features-title{
     font-family: "Playfair Display", sans-serif;
     font-weight: 400;
     font-size: 144px;
 }
-.features-title:nth-child(3){
-    font-weight: 400;
-    font-size: 72px;
-}
 .features-btn{
     margin-top: 41px;
-    margin-bottom: 183px;
     font-family: "Roboto", sans-serif;
     border-style: none;
     border-radius: 10px;
@@ -105,8 +114,6 @@ body{
     color: var(--text-color);
     background-color: #8e32c6;
 } 
-
-
 
 .benefits{
     background-image: url(../img/bg-one.jpg);
@@ -255,6 +262,8 @@ body{
     background-image: url(../img/bg-order.jpg);
     background-size: cover;
 }
+
+
 .form{
     display: flex;
     align-items: center;
@@ -295,13 +304,28 @@ body{
     margin-bottom: 37px;
 }
 .footer{
-    height: 316px;
+    padding-bottom: 50px;
     background-color: var(--footer-color);
     color: var(--text-color);
 }
-.footer-wrap{
+.box-footer{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    border-bottom: 1px solid #9b9b9b;
+    padding-bottom: 20px;
+}
+.wrap{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24p
+
+}
+.address{
+    padding-top: 24px;
+}
+.email-list{
+    text-align: right;
 }
 .email-link{
     font-weight: 400;
@@ -309,33 +333,27 @@ body{
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: var(--text-color);
-    font-family: "Roboto", sans-serif;
-}
-.footer-item{
-    padding-top: 45px;
-    border-bottom: 2px solid;
-}
-
-.footer-text{
-    font-weight: 400;
-    font-size: 24px;
-    padding-bottom: 10px;
 }
 .email-item{
-    text-align: right;
-    border-bottom: 2px solid;
+    padding-bottom:10px;
 }
-.email-list{
-    margin-left: 373px;
-
+.footer-text{
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 24px;
 }
-.email-list:nth-child(2){
-    text-align: center;
-}
-.email-img{
-    align-items: flex-end;
-    margin-top: 19px;
+.wrap-img{
     width: 108px;
     height: 81px;
 }
-
+.wrap-text{
+    font-family: "PT Serif", sans-serif; 
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+}
+.address-text{
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 18px;
+}
