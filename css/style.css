@@ -112,6 +112,7 @@ body{
     font-weight: 400;
     font-size: 24px;
     color: var(--text-color);
+    cursor: pointer;
     background-color: #8e32c6;
 } 
 
@@ -300,6 +301,7 @@ body{
     border-style: none;
     font-weight: 400;
     font-size: 24px;
+    cursor: pointer;
     color: var(--text-color);
     margin-bottom: 37px;
 }
