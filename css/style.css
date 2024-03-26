@@ -342,6 +342,9 @@ body{
     text-decoration-skip-ink: none;
     color: var(--text-color);
 }
+.email-link:hover{
+    color: #9a76f9;
+}
 .email-item{
     padding-bottom:10px;
 }
