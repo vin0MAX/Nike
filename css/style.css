@@ -115,6 +115,9 @@ body{
     cursor: pointer;
     background-color: #8e32c6;
 } 
+.features-btn:hover{
+    background-color:#61337c;
+}
 
 .benefits{
     background-image: url(../img/bg-one.jpg);
@@ -304,6 +307,9 @@ body{
     cursor: pointer;
     color: var(--text-color);
     margin-bottom: 37px;
+}
+.form-btn:hover{
+    background-color:#61337c;
 }
 .footer{
     padding-bottom: 50px;
